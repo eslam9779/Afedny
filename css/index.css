@@ -1,0 +1,521 @@
+:root {
+
+    --main_color: rgba(255, 127, 80, 1);
+    --background-color: #008080;
+
+    --paragraph-color: rgba(77, 77, 77, 1);
+    --sections-background: rgba(235, 245, 245, 1)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    width: 100%;
+    direction: rtl;
+    font-family: "Noto Kufi Arabic", sans-serif;
+
+}
+
+.home {
+
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--background-color);
+    width: 100%;
+    background-image: url("../assets//imgs/home_backGround.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.navbar_icon {
+    order: 2;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar_icon img {
+    margin-left: 20px;
+    width: 298px;
+    height: 80px;
+
+}
+
+.navbar-toggler {
+    order: 3;
+}
+
+.navbar-nav {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px
+}
+
+.navbar-nav li {
+    margin: 0 10px;
+
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--main_color);
+}
+
+.navbar-collapse {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: aliceblue;
+    padding: 8px 4px 8px 4px !important;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--main_color) !important;
+
+}
+
+
+.mid_section {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+
+}
+
+.mid_section-header_container {
+
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.mid_section-header {
+
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 5;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.mid_section-paragraph {
+
+    font-weight: 400;
+    font-size: 17px !important;
+    width: 50% !important;
+    line-height: 1.5;
+    /* margin-top: 5px; */
+    line-height: 2;
+
+}
+
+.colored_word {
+    color: var(--main_color);
+    margin-top: 5px;
+}
+
+.inputGroup {
+
+    margin-bottom: 1rem;
+    width: 55%;
+    position: relative;
+}
+
+.inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: white;
+    width: 100%;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    border: 0;
+    background-color: var(--main_color);
+    padding: 8px;
+}
+
+.search-icon img {
+
+    width: 20px;
+}
+
+.search-icon span {
+
+    font-size: 18px;
+}
+
+.inputGroup input {
+    padding-left: 40px;
+    width: 100%;
+}
+
+.inputGroup :is(input:focus) {
+    border-color: var(--main_color)
+}
+
+.carousel {
+
+    padding: 2rem 0;
+}
+
+.carousel-container {
+    position: relative;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white;
+    width: 16px;
+    height: 30px;
+    background-size: 9px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../assets/imgs/prev.png');
+}
+
+.carousel-control-next-icon {
+    background-image: url('../assets/imgs/next.png');
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+
+}
+
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+
+.afedny_liberary {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7rem auto;
+    /* flex-wrap: wrap-reverse; */
+}
+
+.afedny_liberary_about h3 {
+
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(26, 26, 26, 1);
+    line-height: 43.2px;
+}
+
+.afedny_liberary_about p {
+
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    width: 625px;
+    line-height: 28.8px;
+}
+
+.afedny_liberary_about button {
+
+    width: 117px;
+    height: 48px;
+    padding: 0px 24px 0px 24px;
+    border-radius: 2px;
+    background-color: var(--main_color);
+    border: none;
+}
+
+.liberary_image img {
+    width: 100%;
+}
+
+.section_category {
+
+    width: 100%;
+    background-color: var(--sections-background);
+    padding: 50px 0;
+}
+
+.section_category-paragraph {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_category-paragraph h2 {
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.section_category-paragraph p {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+    width: 638px;
+    height: 69px;
+    color: var(--paragraph-color);
+
+}
+
+.card {
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: box-shadow 0.3s ease;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 172px;
+    object-fit: cover;
+    flex-shrink: 0; 
+}
+
+.card-text {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 10px; 
+    min-width: 0;
+}
+
+.card-text h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(26, 26, 26, 1);
+    word-wrap: break-word;
+}
+
+.card-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25.2px;
+    color: var(--paragraph-color);
+    overflow: hidden;
+}
+
+.card-text a {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+@media screen and (max-width:1250px) {
+
+    .carousel-control-prev {
+        left: 1px;
+    }
+
+    .carousel-control-next {
+        right: 1px;
+    }
+
+    .afedny_liberary {
+
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .card-body{
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+
+}
+
+@media screen and (max-width:850px) {
+
+
+    .mid_section-header {
+
+        font-size: 40px;
+    }
+
+    .mid_section-paragraph {
+
+        width: 60% !important;
+        font-size: 14px !important;
+
+    }
+}
+
+
+
+@media screen and (max-width:769px) {
+
+    .mid_section-header {
+
+        font-size: 28px;
+    }
+
+    .mid_section-paragraph {
+
+        font-size: 12px !important;
+
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        opacity: 0.5;
+    }
+
+    .afedny_liberary_about {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .afedny_liberary_about p,
+    .afedny_liberary_about button {
+        width: auto;
+        font-size: 15px;
+    }
+    .section_category-paragraph h2{
+        margin: 50px;
+    }
+    .section_category-paragraph p{
+
+        width: auto;
+            /* padding: 10px; */
+    }
+    .card-body{
+
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+}              
+
+
+@media screen and (max-width:480px) {
+
+    .mid_section-header {
+
+        font-size: 22px;
+    }
+
+    .navbar_icon img {
+        width: 120px;
+        height: 70px;
+    }
+
+    .navbar-toggler {
+        width: 50px;
+    }
+
+    .search-icon span {
+        display: none;
+    }
+    .section_category-paragraph h3{
+
+        font-size: 20px;
+    }
+
+ .section_category-paragraph p{
+
+     font-size: 10px;
+    }
+    .card-body{
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .card-body{
+
+        width: 100%;
+    }
+
+}
