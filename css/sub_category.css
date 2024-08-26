@@ -146,6 +146,11 @@ body {
 .books_cat_card:hover h3 {
     color: var(--main_color);
 }
+.books_cat a{
+
+    text-decoration:none !important;
+    color: #212529;
+}
 
 .books_cat_card:hover {
 
@@ -547,6 +552,7 @@ hr {
     .books_cat_card h3{
         font-size: 12px;
     } 
+ 
     .books_cat_card span {
 
         font-size: 9px;

@@ -1,0 +1,266 @@
+:root {
+
+    --main_color: rgba(255, 127, 80, 1);
+    --background-color: #008080;
+
+    --paragraph-color: rgba(77, 77, 77, 1);
+    --sections-background: rgba(235, 245, 245, 1)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    width: 100%;
+    direction: rtl;
+    font-family: "Noto Kufi Arabic", sans-serif;
+
+}
+
+.mainSections {
+
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--background-color);
+    width: 100%;
+    background-image: url("../assets/imgs/home_backGround.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.navbar_icon {
+    order: 2;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar_icon img {
+    margin-left: 20px;
+    width: 298px;
+    height: 80px;
+
+}
+
+.navbar-toggler {
+    order: 3;
+}
+
+.navbar-nav {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px
+}
+
+.navbar-nav li {
+    margin: 0 10px;
+
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--main_color);
+}
+
+.navbar-collapse {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: aliceblue;
+    padding: 8px 4px 8px 4px !important;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--main_color) !important;
+
+}
+
+.active {
+    color: var(--main_color) !important;
+}
+
+
+.sections_Number {
+
+    margin-top: 4rem;
+    padding: 10px 0 30px 0;
+}
+
+.sections_Number p {
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32.4px;
+    margin-top: 20px;
+
+}
+
+.sections_Number span {
+
+    color: var(--main_color);
+
+}
+
+@media screen and (max-width:1250px) {}
+
+@media screen and (max-width:900px) {}
+
+@media screen and (max-width:768px) {
+    .sections_Number {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .navbar_icon img {
+        width: 120px;
+        height: 70px;
+    }
+
+    .navbar-toggler {
+        width: 50px;
+    }
+
+    .sections_Number h4 {
+
+        font-size: 20px;
+    }
+
+    .sections_Number {
+
+        font-size: 12px;
+    }
+}
+
+/* .card {
+
+    border: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+
+    width: 216px;
+    height: 288px;
+}
+
+.card-body h3 {
+
+
+    font-size: 16px ;
+    font-weight: 700;
+}
+
+.card-body p {
+
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--paragraph-color);
+} */
+
+.card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add space between cards */
+}
+
+
+.card img {
+    width: 100%;
+    max-width: 216px;
+    height: auto; /* Maintain aspect ratio */
+}
+.card-body h3 {
+
+
+    font-size: 16px ;
+    font-weight: 700;
+}
+
+.card-body p {
+
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--paragraph-color);
+} 
+
+/* Adjustments for screen sizes */
+@media (max-width: 1160px) {
+    .card img {
+        max-width: 180px; /* Reduce image size */
+        height: auto;
+    }
+
+    .card-body h3, .card-body p {
+        font-size: 15px; /* Slightly reduce font size */
+    }
+}
+
+@media (max-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%; /* 2 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%; /* 2 cards per row */
+    }
+
+    .card img {
+        max-width: 160px; /* Smaller image size */
+        width: 100%;
+        height: auto;
+    }
+
+    .card-body h3, .card-body p {
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%; /* 1 card per row on small screens */
+    }
+
+    .card img {
+        max-width: 140px; /* Further reduce image size */
+        width: 100%;
+        height: auto;
+    }
+
+    .card-body h3, .card-body p {
+        font-size: 13px; /* Further reduce font size */
+    }
+}
+
+
+.pagination .page-item:not(:last-child) {
+    margin-right: 10px;
+}
