@@ -184,19 +184,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; /* Add space between cards */
+    margin-bottom: 20px;
+    /* Add space between cards */
 }
 
 
 .card img {
     width: 100%;
     max-width: 216px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
+    /* Maintain aspect ratio */
 }
+
 .card-body h3 {
 
 
-    font-size: 16px ;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -205,62 +208,93 @@ body {
     font-size: 14px;
     font-weight: 500;
     color: var(--paragraph-color);
-} 
+}
 
 /* Adjustments for screen sizes */
 @media (max-width: 1160px) {
     .card img {
-        max-width: 180px; /* Reduce image size */
+        max-width: 180px;
+        /* Reduce image size */
         height: auto;
     }
 
-    .card-body h3, .card-body p {
-        font-size: 15px; /* Slightly reduce font size */
+    .card-body h3,
+    .card-body p {
+        font-size: 15px;
+        /* Slightly reduce font size */
     }
 }
 
 @media (max-width: 992px) {
     .col-lg-3 {
         flex: 0 0 50%;
-        max-width: 50%; /* 2 cards per row */
+        max-width: 50%;
+        /* 2 cards per row */
     }
 }
 
 @media (max-width: 768px) {
     .col-md-4 {
         flex: 0 0 50%;
-        max-width: 50%; /* 2 cards per row */
+        max-width: 50%;
+        /* 2 cards per row */
     }
 
     .card img {
-        max-width: 160px; /* Smaller image size */
+        max-width: 160px;
+        /* Smaller image size */
         width: 100%;
         height: auto;
     }
 
-    .card-body h3, .card-body p {
-        font-size: 14px; /* Smaller font size */
+    .card-body h3,
+    .card-body p {
+        font-size: 14px;
+        /* Smaller font size */
     }
 }
 
 @media (max-width: 480px) {
     .col-md-4 {
         flex: 0 0 100%;
-        max-width: 100%; /* 1 card per row on small screens */
+        max-width: 100%;
+        /* 1 card per row on small screens */
     }
 
     .card img {
-        max-width: 140px; /* Further reduce image size */
+        max-width: 140px;
+        /* Further reduce image size */
         width: 100%;
         height: auto;
     }
 
-    .card-body h3, .card-body p {
-        font-size: 13px; /* Further reduce font size */
+    .card-body h3,
+    .card-body p {
+        font-size: 13px;
+        /* Further reduce font size */
     }
 }
 
 
 .pagination .page-item:not(:last-child) {
     margin-right: 10px;
+}
+
+.filter_btn {
+    
+    width: 298px !important;
+    height: 64px;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid rgba(235, 235, 235, 1);
+
+}
+
+.filter_btn h3 {
+
+    font-weight: 700;
+    line-height: 28.8px;
+    font-size: 16px;
+
+    color: var(--main_color);
 }
