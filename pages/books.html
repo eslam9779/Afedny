@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
     <!-- bootstrap -->
-     
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -66,280 +66,456 @@
 
 
     <div class="container">
-        <div class="row ">
-            <div class="col-lg-3 col-md-4 col-12 mt-5">
+        <button id="sidebarToggle" class="sidebar-toggle-btn">Filter</button>
 
-                <!-- Content Rows -->
-                <div class="row mt-3 ">
-                    <button class="filter_btn" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapse1"
-                        aria-expanded="false" aria-controls="filterCollapse">
+        <div class="row ">
+
+            <div class="col-lg-3 col-md-4 col-12 mt-5" id="sidebar">
+                <!-- fisrt filter -->
+                <div class="row mt-2 ">
+                    <button class="filter_btn_orange filter_btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#filterCollapse1" aria-expanded="false" aria-controls="filterCollapse1">
                         <div class="d-flex justify-content-between align-items-center">
                             <h3>القسم الرئيسي</h3>
                             <span>
-                                <img id="toggleIcon" src="../assets/imgs/expandicon.png" alt="Toggle Icon">
+                                <img id="toggleIcon1" src="../assets/imgs/minus.png" alt="Toggle Icon">
                             </span>
                         </div>
                     </button>
-
-                    <div class="collapse" id="filterCollapse1">
-                        <div class="card card-body mt-3">
+                    <div class="collapse show filtration_card" id="filterCollapse1">
+                        <div class="card5 card-body mt-3 ">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="filter1">
                                 <label class="form-check-label" for="filter1">
-                                    Filter 1
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
                                 </label>
+
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter2">
-                                <label class="form-check-label" for="filter2">
-                                    Filter 2
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
                                 </label>
+
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter3">
-                                <label class="form-check-label" for="filter3">
-                                    Filter 3
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
                                 </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
                             </div>
                         </div>
                     </div>
 
-
-
-
-
-                    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
-                        Filter
-                    </button>
-
-                    <div class="collapse" id="filterCollapse">
-                        <div class="card card-body mt-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter1">
-                                <label class="form-check-label" for="filter1">
-                                    Filter 1
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter2">
-                                <label class="form-check-label" for="filter2">
-                                    Filter 2
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter3">
-                                <label class="form-check-label" for="filter3">
-                                    Filter 3
-                                </label>
-                            </div>
-                        </div>
-                    </div> -->
-
-
-                    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
-                        Filter
-                    </button>
-
-                    <div class="collapse" id="filterCollapse">
-                        <div class="card card-body mt-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter1">
-                                <label class="form-check-label" for="filter1">
-                                    Filter 1
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter2">
-                                <label class="form-check-label" for="filter2">
-                                    Filter 2
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter3">
-                                <label class="form-check-label" for="filter3">
-                                    Filter 3
-                                </label>
-                            </div>
-                        </div>
-                    </div>  -->
-
-                    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
-                        Filter
-                    </button>
-
-                    <div class="collapse" id="filterCollapse">
-                        <div class="card card-body mt-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter1">
-                                <label class="form-check-label" for="filter1">
-                                    Filter 1
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter2">
-                                <label class="form-check-label" for="filter2">
-                                    Filter 2
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="filter3">
-                                <label class="form-check-label" for="filter3">
-                                    Filter 3
-                                </label>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
+
+                <!-- second filter -->
+                <div class="row mt-2 ">
+                    <button class="filter_btn_orange filter_btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#filterCollapse2" aria-expanded="false" aria-controls="filterCollapse1">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3>القسم الفرعي</h3>
+                            <span>
+                                <img id="toggleIcon1" src="../assets/imgs/minus.png" alt="Toggle Icon">
+                            </span>
+                        </div>
+                    </button>
+                    <div class="collapse show filtration_card" id="filterCollapse2">
+                        <div class="card5 card-body mt-3 ">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- third filter -->
+                <div class="row mt-2 ">
+                    <button class="filter_btn_orange filter_btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#filterCollapse3" aria-expanded="false" aria-controls="filterCollapse">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3> المؤلف</h3>
+                            <span>
+                                <img id="toggleIcon1" src="../assets/imgs/minus.png" alt="Toggle Icon">
+                            </span>
+                        </div>
+                    </button>
+                    <div class="collapse show filtration_card" id="filterCollapse3">
+                        <div class="card5 card-body mt-3 ">
+                            <div class="inputGroup">
+
+                                <button class='search-icon'>
+                                    <img src="../assets/imgs/search.png" />
+
+                                </button>
+                                <input type="text" placeholder='بحث ...' />
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fourth filter -->
+                <div class="row mt-2 ">
+                    <button class="filter_btn_orange filter_btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#filterCollapse4" aria-expanded="false" aria-controls="filterCollapse4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3> المؤلف</h3>
+                            <span>
+                                <img id="toggleIcon1" src="../assets/imgs/minus.png" alt="Toggle Icon">
+                            </span>
+                        </div>
+                    </button>
+                    <div class="collapse show filtration_card" id="filterCollapse4">
+                        <div class="card5 card-body mt-3 ">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="filter1">
+                                <label class="form-check-label" for="filter1">
+                                    علوم الحاسب
+                                    <label class="form-check-number" for="filter1">
+                                        (24)
+                                    </label>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
 
-            <div class="col-lg-9 col-md-8 col-12 mt-5">
+
+
+            <!-- books -->
+            <div class="col-lg-9 col-md-8 col-12 mt-5" id="mainContent">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;"> <!-- Adjusted to 100% for responsiveness -->
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card-link">
+                            <div class="card" style="width: 100%;">
+                                <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3>رواية يوتوبيا</h3>
+                                    <p class="card-text">د. أحمد خالد توفيق</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center mt-4">
 
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <div class="card" style="width: 100%;">
-                            <img class="card-img-top" src="../assets/imgs/story.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h3>رواية يوتوبيا</h3>
-                                <p class="card-text">د. أحمد خالد توفيق</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <li class="page-item"><a class="page-link" href="#">
+                                <img src="../assets/imgs/next.png">
+                            </a></li>
+                        <li class="page-item"><a class="page-link active_btn" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><span class="page-link ">...</span></li>
+                        <li class="page-item"><a class="page-link" href="#">17</a></li>
+                        <li class="page-item"><a class="page-link" href="#">
+                                <img src="../assets/imgs/prev.png">
+                            </a></li>
+                    </ul>
+                </nav>
+
             </div>
 
-            <!-- Paginator -->
-            <nav aria-label="Page navigation">
-                <ul class="pagination justify-content-center mt-4">
-                    <!-- Next Button (reversed) -->
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
 
-                    <!-- Page Numbers -->
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+            </div>
+            </div>
+            
 
-                    <!-- Previous Button (reversed) -->
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+
+
+            <!-- footer -->
+     <div class="footer mt-5">
+        <div class="container footer_paragraph">
+            <img src="../assets/imgs/Frame 427322221.png">
+            <p>إنها سلسلة من الكلمات اللاتينية التي ، عند وضعها في وضعها ، لا تشكل جملًا بمعنى كامل ، ولكنها تعطي الحياة
+                لنص اختبار مفيد لملء الفراغات التي يتم شغلها لاحقًا من نصوص مخصصة كتبها متخصصون في الاتصال
+            </p>
+
+        </div>
+
+        <div class="footer_icons">
+            <div class="social_media">
+                <img src="../assets/imgs/fb.png">
+            </div>
+            <div class="social_media">
+                <img src="../assets/imgs/linkedin.png">
+            </div>
+            <div class="social_media">
+                <img src="../assets/imgs/twitter.png">
+            </div>
+        </div>
+
+        <div class="footer_links">
+            <a href="">من نحن</a>
+            <a href="">اتصل بنا</a>
+            <a href="">الشروط والأحكام</a>
+            <a href="">سياسة الخصوصية</a>
+        </div>
+
+        <hr>
+        <div class="all_rights">
+            <span>جميع الحقوق محفوظة </span><img src="../assets/imgs/Vector.png">
+            <span>مكتبة أفدني الشاملة 2024</span>
+        </div>
+
+    </div>
+
+
+
+
+
 
             <script type="text/javascript" src="../js/books.js"></script>
 </body>
