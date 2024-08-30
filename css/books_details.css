@@ -160,6 +160,7 @@ body {
     width: 20px;
     height: 20px;
 }
+
 .social_media2 img:hover {
     filter: invert(57%) sepia(64%) saturate(2100%) hue-rotate(345deg) brightness(100%) contrast(101%);
 }
@@ -282,10 +283,9 @@ body {
 
 .about_book {
 
-    /* width: 872px; */
-    /* height: 85px; */
+
     margin-top: 30px;
-    
+
 
 }
 
@@ -295,7 +295,7 @@ body {
     font-weight: 400;
     line-height: 25.2px;
     color: var(--black-paragraph-color);
-    
+
 }
 
 #showMoreBtn {
@@ -368,7 +368,6 @@ tr {
 .author_info span {
     font-size: 14px;
     font-weight: 500;
-    /* line-height: 25.2px; */
     color: var(--black-paragraph-color);
 }
 
@@ -569,7 +568,6 @@ tr {
 .most_readed_item {
     display: inline-block;
     margin-left: 20px;
-    /* Margin value */
     user-select: none;
     width: 50%;
     height: 130px;
@@ -682,8 +680,9 @@ tr {
 
     background-color: var(--main_color);
 }
+
 .social_media:hover img {
-    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Image turns black */
+    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%);
 }
 
 
@@ -713,7 +712,6 @@ hr {
     clear: both;
     display: block;
     width: 96%;
-    /* background-color:#3ab5b5 !important; */
     height: 1px;
     margin-top: 50px !important;
 }
@@ -807,14 +805,16 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
 }
-.cancel_btn{
+
+.cancel_btn {
 
     color: var(--main_color);
     background-color: #FFFFFF;
 }
-.add_btn{
+
+.add_btn {
 
     background-color: var(--main_color);
     color: #1A1A1A;

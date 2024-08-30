@@ -40,7 +40,7 @@ const move = (e) => {
 let isDown2 = false;
 let startX2;
 let scrollLeft2;
-const slider2 = document.querySelector('.test'); // Using querySelector for class
+const slider2 = document.querySelector('.test');
 
 const end2 = () => {
     isDown2 = false;
@@ -51,7 +51,7 @@ const start2 = (e) => {
     isDown2 = true;
     slider2.classList.add('active');
     startX2 = (e.pageX || e.touches[0].pageX) - slider2.offsetLeft;
-    scrollLeft2 = slider2.scrollLeft; // Corrected to scrollLeft
+    scrollLeft2 = slider2.scrollLeft; 
 }
 
 const move2 = (e) => {

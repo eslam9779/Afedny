@@ -121,7 +121,6 @@ body {
     font-size: 17px !important;
     width: 50% !important;
     line-height: 1.5;
-    /* margin-top: 5px; */
     line-height: 2;
 
 }
@@ -242,7 +241,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 7rem auto;
-    /* flex-wrap: wrap-reverse; */
 }
 
 .afedny_liberary_about h3 {
@@ -384,7 +382,6 @@ body {
     text-decoration: none;
     font-size: 14px;
     color: var(--paragraph-color);
-    /* margin-inline: 5px; */
     margin: 20px 5px 30px 5px;
 }
 
@@ -517,7 +514,6 @@ body {
 
 .most_readed-paragraph {
 
-    /* padding: 30px; */
     margin-top: 80px !important;
 
 }
@@ -592,7 +588,6 @@ body {
 .most_readed_item {
     display: inline-block;
     margin-left: 20px;
-    /* Margin value */
     user-select: none;
     width: 50%;
     height: 130px;
@@ -688,8 +683,6 @@ body {
     justify-content: space-around;
     margin-top: 30px;
     gap: 10px;
-    /* Add space between cards */
-
 }
 
 .active-slide {
@@ -703,7 +696,6 @@ body {
     align-items: center;
     flex-direction: column;
     width: 16.6%;
-    /* Six cards in a row by default */
     height: 200px;
     background-color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
@@ -834,16 +826,19 @@ body {
 
 .social_media:hover {
 
-    background-color: var(--main_color);    
+    background-color: var(--main_color);
 }
+
 .social_media:hover img {
-    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Image turns black */
+    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%);
 }
+
 .navbar-nav {
 
     display: flex;
     flex-grow: 1 !important;
 }
+
 .footer_links {
 
     width: 100%;
@@ -870,7 +865,6 @@ hr {
     clear: both;
     display: block;
     width: 96%;
-    /* background-color:#3ab5b5 !important; */
     height: 1px;
     margin-top: 50px !important;
 }
@@ -892,7 +886,6 @@ hr {
     height: 500px;
     margin: 0 auto;
     overflow: visible;
-    /* Ensure that overflowing parts are hidden */
     background-color: #f8f8f8;
     background-color: transparent;
 }
@@ -914,7 +907,6 @@ hr {
 
 }
 
-/* Hide overflowing content */
 .slider-container::before,
 .slider-container::after {
     content: "";
@@ -940,54 +932,41 @@ hr {
 .book-slide {
     position: absolute;
     width: 200px;
-    /* Adjust size as needed */
     height: 300px;
-    /* Adjust size as needed */
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.5s ease, z-index 0.5s ease, opacity 0.5s ease;
     opacity: 1;
-    /* Maximum opacity for all slides */
     background-color: transparent !important;
 
 }
 
-/* Center Slide */
 .book-slide.active {
     left: 50%;
     transform: translateX(-50%) translateY(-50%) scale(1.2);
-    /* Zoom in on center image */
     z-index: 5;
 }
 
-/* First Slide to the Left */
 .book-slide.prev-1 {
     left: 25%;
-    /* Adjust to show 3/4 of the image */
     transform: translateX(-50%) translateY(-50%) scale(1);
     z-index: 4;
 }
 
-/* Second Slide to the Left */
 .book-slide.prev-2 {
     left: 10%;
-    /* Further adjust to show more of the image */
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     z-index: 3;
 }
 
-/* First Slide to the Right */
 .book-slide.next-1 {
     left: 75%;
-    /* Adjust to show 3/4 of the image */
     transform: translateX(-50%) translateY(-50%) scale(1);
     z-index: 4;
 }
 
-/* Second Slide to the Right */
 .book-slide.next-2 {
     left: 90%;
-    /* Further adjust to show more of the image */
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     z-index: 3;
 }
@@ -999,6 +978,7 @@ hr {
 .next {
     right: -80px;
 }
+
 @media screen and (max-width:1250px) {
 
     .prev {
@@ -1008,6 +988,7 @@ hr {
     .next {
         right: 1px;
     }
+
     .slider-container {
         width: 90%;
         max-width: 900px;
@@ -1075,6 +1056,7 @@ hr {
         font-size: 14px !important;
 
     }
+
     .slider-container {
         width: 80%;
         max-width: 800px;
@@ -1114,14 +1096,17 @@ hr {
         font-size: 12px !important;
 
     }
+
     .slider-container {
         width: 70%;
         max-width: 700px;
     }
+
     .slider img {
 
         height: 250px;
     }
+
     .next,
     .prev {
         opacity: 0.5;
@@ -1150,7 +1135,6 @@ hr {
     .footer_paragraph p {
 
         width: auto;
-        /* padding: 10px; */
     }
 
     .card-body {
@@ -1270,10 +1254,12 @@ hr {
 
         font-size: 10px;
     }
+
     .slider-container {
         width: 60%;
         max-width: 600px;
     }
+
     .slider img {
 
         height: 250px;
@@ -1287,11 +1273,6 @@ hr {
 
 
     }
-
-    /* .card-body {
-
-        width: 100%;
-    } */
 
     .newest_books-links {
 
@@ -1340,13 +1321,14 @@ hr {
         width: 33%;
     }
 
-    .author_card{
-        
+    .author_card {
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .author_img {
 
         height: 60px !important;
@@ -1364,9 +1346,10 @@ hr {
         display: flex;
         flex-direction: column;
     }
+
     .author_card span>img {
 
-       width: 15px;
+        width: 15px;
     }
 
     .footer_paragraph img {

@@ -175,7 +175,7 @@ body {
 }
 
 .card {
-   
+
     padding: 16px;
     border-radius: 2px;
     border: 1px solid #EBEBEB;
@@ -331,8 +331,9 @@ body {
 
     background-color: var(--main_color);
 }
+
 .social_media:hover img {
-    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Image turns black */
+    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%);
 }
 
 .footer_links {
@@ -361,7 +362,6 @@ hr {
     clear: both;
     display: block;
     width: 96%;
-    /* background-color:#3ab5b5 !important; */
     height: 1px;
     margin-top: 50px !important;
 }
@@ -386,16 +386,17 @@ hr {
 }
 
 @media (max-width: 992px) {
-    
-.card h3 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 28.8px;
-}
-.footer_paragraph p {
 
-    width: auto;
-}
+    .card h3 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28.8px;
+    }
+
+    .footer_paragraph p {
+
+        width: auto;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -407,28 +408,33 @@ hr {
         align-items: center;
         flex-direction: column;
     }
-    .filtaration{
+
+    .filtaration {
 
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         gap: 20px;
     }
+
     .footer_paragraph p {
 
         width: auto;
     }
-    .footer_icons{
+
+    .footer_icons {
         margin-top: 10px;
     }
+
     .footer_links a {
 
         margin-inline: 30px;
-        font-size: 15px ;
+        font-size: 15px;
         display: flex;
         justify-content: space-between;
         align-items: start;
-        margin: auto !important;;
+        margin: auto !important;
+        ;
     }
 
 }
@@ -453,19 +459,23 @@ hr {
 
         font-size: 12px;
     }
-    .footer_paragraph img{
+
+    .footer_paragraph img {
 
         width: 220px;
     }
+
     .footer_paragraph p {
 
         font-size: 10px;
     }
-    .footer_icons{
+
+    .footer_icons {
 
         margin-top: 30px !important;
     }
-    .footer_links{
+
+    .footer_links {
 
         display: flex;
         flex-direction: column;
@@ -474,10 +484,10 @@ hr {
         gap: 8px;
     }
 
-    .all_rights{
+    .all_rights {
 
         font-size: 10px;
 
     }
-  
+
 }

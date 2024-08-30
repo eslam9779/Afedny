@@ -18,11 +18,10 @@ let isDown = false;
 let startX;
 let scrollLeft;
 const slider = document.querySelector('.most_readed_items');
-const nextBtn = document.querySelector('.next');  // This will now scroll backwards
-const backBtn = document.querySelector('.back');  // This will now scroll forwards
-const item = document.querySelector('.most_readed_item'); // Select a single item
+const nextBtn = document.querySelector('.next');  
+const backBtn = document.querySelector('.back'); 
+const item = document.querySelector('.most_readed_item'); 
 
-// Handle mouse and touch events
 const end = () => {
   isDown = false;
   slider.classList.remove('active');
@@ -43,7 +42,7 @@ const move = (e) => {
   slider.scrollLeft = scrollLeft - dist;
 }
 
-const itemWidth = item.offsetWidth + parseInt(window.getComputedStyle(item).marginRight); // Calculate the width of one item including margin
+const itemWidth = item.offsetWidth + parseInt(window.getComputedStyle(item).marginRight); 
 const scrollMultiplier = 1; 
 nextBtn.addEventListener('click', () => {
   slider.scrollLeft -= itemWidth * scrollMultiplier; 
@@ -71,11 +70,10 @@ let isDown2 = false;
 let startX2;
 let scrollLeft2;
 const slider2 = document.querySelector('.test2');
-const nextBtn2 = document.querySelector('.next2');  // This will now scroll backwards
-const backBtn2 = document.querySelector('.back2');  // This will now scroll forwards
-const item2 = document.querySelector('.test2'); // Select a single item
+const nextBtn2 = document.querySelector('.next2');  
+const backBtn2 = document.querySelector('.back2'); 
+const item2 = document.querySelector('.test2'); 
 
-// Handle mouse and touch events
 const end2 = () => {
   isDown2 = false;
   slider.classList.remove('active');
@@ -96,7 +94,7 @@ const move2 = (e) => {
   slider2.scrollLeft = scrollLeft2 - dist;
 }
 
-const itemWidth2 = item2.offsetWidth + parseInt(window.getComputedStyle(item2).marginRight); // Calculate the width of one item including margin
+const itemWidth2 = item2.offsetWidth + parseInt(window.getComputedStyle(item2).marginRight);
 const scrollMultiplier2 = 1; 
 nextBtn2.addEventListener('click', () => {
   slider2.scrollLeft -= itemWidth2 * scrollMultiplier; 

@@ -141,7 +141,7 @@ body {
     background-color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
     border: 1px solid #EBEBEB;
-    margin-bottom: 10px; /* Add space between rows */
+    margin-bottom: 10px; 
 }
 .books_cat_card:hover h3 {
     color: var(--main_color);
@@ -261,7 +261,6 @@ body {
 .most_readed_item {
     display: inline-block;
     margin-left: 20px;
-    /* Margin value */
     user-select: none;
     width: 50%;
     height: 130px;
@@ -409,7 +408,7 @@ body {
 }
 
 .social_media:hover img {
-    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Image turns black */
+    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%); 
 }
 
 .footer_links {
@@ -438,7 +437,6 @@ hr {
     clear: both;
     display: block;
     width: 96%;
-    /* background-color:#3ab5b5 !important; */
     height: 1px;
     margin-top: 50px !important;
 }

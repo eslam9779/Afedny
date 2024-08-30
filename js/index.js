@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const slides = document.querySelectorAll('.book-slide');
-  let currentSlide = 3; // Start with the 4th slide as the active one
+  let currentSlide = 3; 
 
   function updateSlides() {
       slides.forEach((slide, index) => {
@@ -54,17 +54,15 @@ function showSlides(n) {
   }
 
   slides.forEach((slide) => {
-    slide.style.display = 'none'; // Hide all slides
+    slide.style.display = 'none';
   });
 
   dots.forEach((dot) => {
-    dot.className = dot.className.replace(' active', ''); // Remove 'active' class from all dots
+    dot.className = dot.className.replace(' active', '');
   });
 
-  // Show the current slide
   slides[slideIndex - 1].style.display = 'flex'; 
 
-  // Highlight the current dot
   dots[slideIndex - 1].className += ' active';
 }
 
@@ -133,39 +131,32 @@ function showSlides2(n) {
   }
 
   slides.forEach((slide) => {
-    slide.style.display = 'none'; // Hide all slides
+    slide.style.display = 'none'; 
   });
 
   dots.forEach((dot) => {
-    dot.className = dot.className.replace(' active', ''); // Remove 'active' class from all dots
+    dot.className = dot.className.replace(' active', ''); 
   });
 
-  // Show the current slide
   slides[slideIndex2 - 1].style.display = 'flex'; 
 
-  // Highlight the current dot
   dots[slideIndex2 - 1].className += ' active';
 }
 
 //////////////////////////////////////////////////////////
 
 
-// author slider
 function showSlider(slideId) {
-  // Remove 'active-slide' class from all slides
   document.querySelectorAll('.card-slide').forEach(slide => {
       slide.classList.remove('active-slide');
   });
 
-  // Add 'active-slide' class to the selected slide
   document.getElementById(slideId).classList.add('active-slide');
 
-  // Remove 'active' class from all buttons
   document.querySelectorAll('.autor_btn').forEach(button => {
       button.classList.remove('active');
   });
 
-  // Add 'active' class to the button that matches the selected slide
   const activeButton = Array.from(document.querySelectorAll('.autor_btn')).find(button => {
       return button.getAttribute('onclick').includes(slideId);
   });
@@ -175,5 +166,4 @@ function showSlider(slideId) {
   }
 }
 
-// Call the function to show the initial slide and set the initial active button
 showSlider('slide1');

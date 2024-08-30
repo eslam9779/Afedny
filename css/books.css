@@ -397,8 +397,9 @@ body {
 
     background-color: var(--main_color);
 }
+
 .social_media:hover img {
-    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Image turns black */
+    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%);
 }
 
 .footer_links {
@@ -427,7 +428,6 @@ hr {
     clear: both;
     display: block;
     width: 96%;
-    /* background-color:#3ab5b5 !important; */
     height: 1px;
     margin-top: 50px !important;
 }
@@ -442,7 +442,7 @@ hr {
 }
 
 #mainContent {
-    margin-left: 0; 
+    margin-left: 0;
 }
 
 .sidebar-toggle-btn {
@@ -465,6 +465,7 @@ hr {
     .card-body h3 {
         font-size: 15px;
     }
+
     .card-body p {
 
         font-size: 12px;
@@ -476,25 +477,27 @@ hr {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
     .footer_paragraph p {
 
         width: auto;
     }
+
     #sidebar {
         transition: transform 0.3s ease-in-out;
         position: fixed;
         top: 0;
-        left: -100%; 
+        left: -100%;
         width: 80%;
         height: 100%;
-        background-color: #fff; 
+        background-color: #fff;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
         z-index: 1000;
         overflow-y: auto;
     }
 
     #mainContent {
-        margin-left: 0; 
+        margin-left: 0;
     }
 
     .sidebar-toggle-btn {
@@ -506,7 +509,7 @@ hr {
     }
 
     #mainContent.sidebar-open {
-        margin-left: 80%; 
+        margin-left: 80%;
     }
 
 }
@@ -528,21 +531,25 @@ hr {
     .card-body h3 {
         font-size: 14px;
     }
+
     .footer_paragraph p {
 
         width: auto;
     }
-    .footer_icons{
+
+    .footer_icons {
         margin-top: 10px;
     }
+
     .footer_links a {
 
         margin-inline: 30px;
-        font-size: 15px ;
+        font-size: 15px;
         display: flex;
         justify-content: space-between;
         align-items: start;
-        margin: auto !important;;
+        margin: auto !important;
+        ;
     }
 
 }
@@ -578,19 +585,23 @@ hr {
     .card-body p {
         font-size: 13px;
     }
-    .footer_paragraph img{
+
+    .footer_paragraph img {
 
         width: 220px;
     }
+
     .footer_paragraph p {
 
         font-size: 10px;
     }
-    .footer_icons{
+
+    .footer_icons {
 
         margin-top: 30px !important;
     }
-    .footer_links{
+
+    .footer_links {
 
         display: flex;
         flex-direction: column;
@@ -599,12 +610,9 @@ hr {
         gap: 8px;
     }
 
-    .all_rights{
+    .all_rights {
 
         font-size: 10px;
 
     }
 }
-
-
-

@@ -182,18 +182,15 @@ body {
 }
 .most_readed {
 
-    /* margin-top: 5rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    /* background-color: #FAFAFA !important; */
     width: 100%;
 }
 
 .most_readed-paragraph {
 
-    /* padding: 30px; */
     margin-top: 80px !important;
 
 }
@@ -273,7 +270,6 @@ body {
 .most_readed_item {
     display: inline-block;
     margin-left: 20px;
-    /* Margin value */
     user-select: none;
     width: 50%;
     height: 130px;
@@ -355,7 +351,7 @@ body {
 }
 
 .social_media:hover img {
-    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Image turns black */
+    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%); 
 }
 .footer_links {
 
@@ -383,7 +379,6 @@ hr {
     clear: both;
     display: block;
     width: 96%;
-    /* background-color:#3ab5b5 !important; */
     height: 1px;
     margin-top: 50px !important;
 }
