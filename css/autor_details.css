@@ -1,0 +1,661 @@
+:root {
+
+    --main_color: rgba(255, 127, 80, 1);
+    --background-color: #008080;
+    --light-color: #FFF2EE;
+    --paragraph-color: #666666;
+    --sections-background: rgba(235, 245, 245, 1);
+    --black-paragraph-color: #1A1A1A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    width: 100%;
+    direction: rtl;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    background-color: #FAFAFA !important;
+
+
+}
+
+.mainSections {
+
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--background-color);
+    width: 100%;
+    background-image: url("../assets/imgs/home_backGround.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.navbar_icon {
+    order: 2;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar_icon img {
+    margin-left: 20px;
+    width: 298px;
+    height: 80px;
+
+}
+
+.navbar-toggler {
+    order: 3;
+}
+
+.navbar-nav {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px
+}
+
+.navbar-nav li {
+    margin: 0 10px;
+
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--main_color);
+}
+
+.navbar-collapse {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: aliceblue;
+    padding: 8px 4px 8px 4px !important;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+.nav-link:hover {
+    color: var(--main_color) !important;
+
+}
+
+.active {
+    color: var(--main_color) !important;
+}
+
+.sections_Number {
+
+    margin-top: 4rem;
+    padding: 10px 0 30px 0;
+}
+
+.sections_Number p {
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32.4px;
+    margin-top: 20px;
+
+}
+
+.sections_Number span {
+
+    color: var(--main_color);
+
+}
+
+.main {
+
+    width: 100%;
+}
+
+.image img {
+    width: 280px;
+    height: 370px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+}
+
+.share_book {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 204px;
+    height: 20px;
+}
+
+.share_book p {
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25.2px;
+
+}
+
+.social_media2 {
+
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.social_media2 img {
+
+    width: 20px;
+    height: 20px;
+}
+
+.books_details {
+
+    width: 100%;
+}
+
+.first_section_container {
+
+
+    padding: 40px;
+    border-radius: 4px;
+    border: 1px solid #EBEBEB;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.header_section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.book_author_evaluation {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.book_author_evaluation h2 {
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 43.2px;
+}
+
+
+.about_book {
+
+    width: 872px;
+    /* height: 85px; */
+    margin-top: 30px;
+
+
+}
+
+.about_book p {
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.2px;
+    color: var(--black-paragraph-color);
+}
+
+tr {
+    width: 872px;
+    height: 48px;
+    gap: 24px;
+    padding: 20px;
+}
+
+.table-striped tbody tr:nth-child(odd)>td {
+    background-color: #F4F5F8 !important;
+}
+
+.table-striped tbody tr:nth-child(even)>td {
+    background-color: #FFFFFF !important;
+}
+
+.overview {
+
+    padding: 20px 40px;
+    border-radius: 4px;
+    border: 1px solid #EBEBEB;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin: 40px 0;
+}
+
+
+.overview h2 {
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32.4px;
+    color: var(--black-paragraph-color);
+}
+
+
+
+.show_more {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    color: var(--main_color);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.author_books {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 4px;
+    border: 1px solid #EBEBEB;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.author_books_header {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.author_books_header h2 {
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32.4px;
+    color: var(--black-paragraph-color);
+}
+
+.author_books_header span {
+
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: var(--background-color);
+}
+
+.inputGroup {
+    width: 297px;
+    position: relative;
+}
+
+.inputGroup input {
+    width: 100%;
+    font-size: 100%;
+    padding: 0.8em 2.5em 0.8em 0.8em;
+    border: 1px solid transparent;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid #EBEBEB;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background-color: transparent;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.search-icon img {
+    width: 20px;
+}
+
+.inputGroup input:focus {
+    border-color: var(--main_color);
+}
+
+
+.books_container{
+
+    width: 100%;
+    gap:100px;
+}
+.book_info {
+
+    /* width: 196px; */
+    height: 321px;
+    
+}
+
+.book_info a {
+
+
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.book_info img {
+
+    width: 196px;
+    height: 268px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+}
+
+.book_info h3 {
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    color: black;
+
+}
+
+.book_info span {
+
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 25.2px;
+    text-align: center;
+    color: var(--black-paragraph-color);
+}
+
+
+
+.footer {
+
+    width: 100%;
+    background-image: url(../assets/imgs/123.png);
+    background-color: rgba(0, 128, 128, 1);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+    margin: 5rem 0 0 0;
+    color: #fff;
+}
+
+.footer_paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.footer_paragraph p {
+
+    width: 837px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25.2px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.footer_icons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media {
+
+    margin-inline: 24px;
+    border: 2px solid var(--main_color);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.social_media:hover {
+
+    background-color: var(--main_color);
+}
+
+.footer_links {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer_links a {
+
+    text-decoration: none;
+    color: #fff;
+    margin-inline: 48px;
+}
+
+.footer_links a:hover {
+
+    color: var(--main_color);
+}
+
+hr {
+    border: 2;
+    clear: both;
+    display: block;
+    width: 96%;
+    /* background-color:#3ab5b5 !important; */
+    height: 1px;
+    margin-top: 50px !important;
+}
+
+.all_rights {
+
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25.2px;
+
+}
+
+@media screen and (max-width:1250px) {
+    .books_details {
+
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: auto !important;
+    }
+
+    .col-3,
+    .col-9 {
+        width: auto;
+    }
+
+    .image img:hover {
+
+        filter: saturate(1.5);
+    }
+
+    .share_book {
+        justify-content: center;
+    }
+
+    .about_book {
+        width: auto !important;
+        height: auto;
+        max-width: 100%;
+        word-wrap: break-word;
+
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+
+    .footer_paragraph p {
+
+        width: auto;
+    }
+}
+
+@media screen and (max-width:769px) {
+
+    .sections_Number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sections_Number p {
+
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 32.4px;
+        margin-top: 20px;
+
+    }
+
+    .header_section {
+
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_book p {
+
+        font-size: 12px;
+        margin: 60px auto;
+        line-height: 20px;
+        margin: 0;
+
+    }
+
+    .table-striped tbody tr>td {
+
+
+        font-size: 12px;
+    }
+
+    .overview,
+    .author_books_header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .footer_paragraph p {
+
+        width: auto;
+    }
+
+    .footer_icons {
+        margin-top: 10px;
+    }
+
+    .footer_links a {
+
+        margin-inline: 30px;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin: auto !important;
+        ;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .navbar_icon img {
+        width: 120px;
+        height: 70px;
+    }
+
+    .navbar-toggler {
+        width: 50px;
+    }
+
+    .search-icon span {
+        display: none;
+    }
+
+    .books_btn_style {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image img {
+
+        width: 200px;
+        height: 300px;
+    }
+
+    .book_author_evaluation h2 {
+
+        font-size: 22px !important;
+        font-weight: 700;
+        line-height: 40.2px;
+    }
+
+    .footer_paragraph img {
+
+        width: 220px;
+    }
+
+    .footer_paragraph p {
+
+        font-size: 10px;
+    }
+
+    .footer_icons {
+
+        margin-top: 30px !important;
+    }
+
+    .footer_links {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .all_rights {
+
+        font-size: 10px;
+
+    }
+
+}
