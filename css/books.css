@@ -397,6 +397,9 @@ body {
 
     background-color: var(--main_color);
 }
+.social_media:hover img {
+    filter: invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Image turns black */
+}
 
 .footer_links {
 

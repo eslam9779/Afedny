@@ -1,21 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var firstNavLink = document.querySelector('.navbar-nav .nav-link');
-    if (firstNavLink) {
-        setActive(firstNavLink);
-    }
+  const slides = document.querySelectorAll('.book-slide');
+  let currentSlide = 3; // Start with the 4th slide as the active one
+
+  function updateSlides() {
+      slides.forEach((slide, index) => {
+          slide.classList.remove('prev-2', 'prev-1', 'next-1', 'next-2', 'active');
+
+          if (index === currentSlide) {
+              slide.classList.add('active');
+          } else if (index === (currentSlide - 2 + slides.length) % slides.length) {
+              slide.classList.add('prev-2');
+          } else if (index === (currentSlide - 1 + slides.length) % slides.length) {
+              slide.classList.add('prev-1');
+          } else if (index === (currentSlide + 1) % slides.length) {
+              slide.classList.add('next-1');
+          } else if (index === (currentSlide + 2) % slides.length) {
+              slide.classList.add('next-2');
+          }
+      });
+  }
+
+  document.querySelector('.next').addEventListener('click', function() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateSlides();
+  });
+
+  document.querySelector('.prev').addEventListener('click', function() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateSlides();
+  });
+
+  updateSlides();
 });
-
-function setActive(element) {
-    
-    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    navLinks.forEach(function(link) {
-        link.classList.remove('active');
-    });
-
-    element.classList.add('active');
-}
-
-
 
 //////////////////////////////// news books slider
 

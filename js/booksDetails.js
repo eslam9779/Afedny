@@ -44,7 +44,7 @@ const move = (e) => {
 }
 
 const itemWidth = item.offsetWidth + parseInt(window.getComputedStyle(item).marginRight); // Calculate the width of one item including margin
-const scrollMultiplier = 30; 
+const scrollMultiplier = 1; 
 nextBtn.addEventListener('click', () => {
   slider.scrollLeft -= itemWidth * scrollMultiplier; 
 });
@@ -66,40 +66,54 @@ backBtn.addEventListener('click', () => {
 })();
 
 ////////////////////////////////////////////second Slider
+
 let isDown2 = false;
 let startX2;
 let scrollLeft2;
-const slider2 = document.querySelector('.test2'); 
+const slider2 = document.querySelector('.test2');
+const nextBtn2 = document.querySelector('.next2');  // This will now scroll backwards
+const backBtn2 = document.querySelector('.back2');  // This will now scroll forwards
+const item2 = document.querySelector('.test2'); // Select a single item
 
+// Handle mouse and touch events
 const end2 = () => {
-    isDown2 = false;
-    slider2.classList.remove('active');
+  isDown2 = false;
+  slider.classList.remove('active');
 }
 
 const start2 = (e) => {
-    isDown2 = true;
-    slider2.classList.add('active');
-    startX2 = (e.pageX || e.touches[0].pageX) - slider2.offsetLeft;
-    scrollLeft2 = slider2.scrollLeft; 
+  isDown2 = true;
+  slider2.classList.add('active');
+  startX2 = (e.pageX || e.touches[0].pageX) - slider2.offsetLeft;
+  scrollLeft2 = slider2.scrollLeft;
 }
 
 const move2 = (e) => {
-    if (!isDown2) return;
-
-    e.preventDefault();
-    const x = (e.pageX || e.touches[0].pageX) - slider2.offsetLeft;
-    const dist = (x - startX2);
-    slider2.scrollLeft = scrollLeft2 - dist; 
+  if (!isDown2) return;
+  e.preventDefault();
+  const x2 = (e.pageX || e.touches[0].pageX) - slider2.offsetLeft;
+  const dist = x2 - startX2;
+  slider2.scrollLeft = scrollLeft2 - dist;
 }
 
+const itemWidth2 = item2.offsetWidth + parseInt(window.getComputedStyle(item2).marginRight); // Calculate the width of one item including margin
+const scrollMultiplier2 = 1; 
+nextBtn2.addEventListener('click', () => {
+  slider2.scrollLeft -= itemWidth2 * scrollMultiplier; 
+});
+
+backBtn.addEventListener('click', () => {
+  slider2.scrollLeft += itemWidth2 * scrollMultiplier; 
+});
+
 (() => {
-    slider2.addEventListener('mousedown', start2);
-    slider2.addEventListener('touchstart', start2);
+  slider2.addEventListener('mousedown', start2);
+  slider2.addEventListener('touchstart', start2);
 
-    slider2.addEventListener('mousemove', move2);
-    slider2.addEventListener('touchmove', move2);
+  slider2.addEventListener('mousemove', move2);
+  slider2.addEventListener('touchmove', move2);
 
-    slider2.addEventListener('mouseleave', end2);
-    slider2.addEventListener('mouseup', end2);
-    slider2.addEventListener('touchend', end2);
+  slider2.addEventListener('mouseleave', end2);
+  slider2.addEventListener('mouseup', end2);
+  slider2.addEventListener('touchend', end2);
 })();
